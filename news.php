@@ -58,27 +58,27 @@
                             // Create thumbnail
                             if ($imageFileType == "jpg" || $imageFileType == "jpeg") {
                                 $source_image = imagecreatefromjpeg($target_file);
-                            }
-                            if ($source_image !== false && $source_image !== null) {
-                                // Continue with the thumbnail creation logic
-            
-                                // Calculate thumbnail dimensions (e.g., 100x100 for thumbnail size)
-                                $thumbnail_width = 720;
-                                $thumbnail_height = 480;
-                                $thumbnail_image = imagecreatetruecolor($thumbnail_width, $thumbnail_height);
-                                imagecopyresampled($thumbnail_image, $source_image, 0, 0, 0, 0, $thumbnail_width, $thumbnail_height, imagesx($source_image), imagesy($source_image));
-
-                                // Save thumbnail to thumbnail directory
-                                if ($imageFileType == "jpg" || $imageFileType == "jpeg") {
-                                    imagejpeg($thumbnail_image, $thumbnail_file);
+                                if ($source_image !== false && $source_image !== null) {
+                                    // Continue with the thumbnail creation logic
+                
+                                    // Calculate thumbnail dimensions (e.g., 100x100 for thumbnail size)
+                                    $thumbnail_width = 720;
+                                    $thumbnail_height = 480;
+                                    $thumbnail_image = imagecreatetruecolor($thumbnail_width, $thumbnail_height);
+                                    imagecopyresampled($thumbnail_image, $source_image, 0, 0, 0, 0, $thumbnail_width, $thumbnail_height, imagesx($source_image), imagesy($source_image));
+    
+                                    // Save thumbnail to thumbnail directory
+                                    if ($imageFileType == "jpg" || $imageFileType == "jpeg") {
+                                        imagejpeg($thumbnail_image, $thumbnail_file);
+                                    }
+    
+                                    imagedestroy($source_image);
+                                    imagedestroy($thumbnail_image);
+    
+                                    echo "<br>Thumbnail created: <img src='$thumbnail_file'>";
+                                } else {
+                                    echo "<br>Error creating source image.";
                                 }
-
-                                imagedestroy($source_image);
-                                imagedestroy($thumbnail_image);
-
-                                echo "<br>Thumbnail created: <img src='$thumbnail_file'>";
-                            } else {
-                                echo "<br>Error creating source image.";
                             }
                         } else {
                             echo "<br>Sorry, there was an error uploading your file.";

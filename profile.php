@@ -2,7 +2,7 @@
 if (!(isset($_SESSION['username']))) {
     echo '<script type="text/javascript">window.location.href="index.php?page=home";</script>';
 }
-$passwordErr = $password2Err = $usernameErr = "";
+$passwordErr = $password2Err = $usernameErr = $password = "";
 $name = $_SESSION["name"];
 $nameParts = explode(" ", $name);
 
@@ -86,10 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 function test_input($data)
 {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
+    return htmlspecialchars(stripslashes(trim($data)));
 }
 ?>
 <!DOCTYPE html>
