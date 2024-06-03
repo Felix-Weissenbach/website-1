@@ -1,0 +1,506 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-bottom: 20px;
+}
+
+a {
+    color: #355070;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ------Klassen------ */
+/* damit website einheitlich bleibt */
+
+.standard-container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.text-highlighted {
+    color: #eaac8b;
+}
+
+#btn {
+    display: block;
+    font-size: 20px;
+    background-color: #eaac8b;
+    color: whitesmoke;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+#btn:hover {
+    background-color: #e56b6f;
+    color: #eaac8b;
+}
+
+/* ------ Navigationsleiste ------ */
+
+#main-nav {
+    background-color: #899db5;
+}
+
+#main-nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#main-nav h1 {
+    float: left;
+    color: #eaac8b;
+    padding-top: 20px;
+}
+
+#main-nav a {
+    color: whitesmoke;
+}
+
+#main-nav ul {
+    float: right;
+    list-style: none;
+}
+
+#main-nav ul li {
+    float: left;
+}
+
+#main-nav ul li a {
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-nav ul li a:hover {
+    background-color: whitesmoke;
+    color: #eaac8b;
+}
+
+
+/* ----- Styles for index.html ----- */
+
+#welcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-engin-akyurt-2725675.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#welcome:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#welcome .welcome-content {
+    float: center;
+    width: 70%;
+    color: #e56b6f;
+    padding: 100px 50px;
+}
+
+#welcome .welcome-img {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+#welcome .welcome-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/*about part*/
+
+#about {
+    background-color: #355070;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#about .about-content {
+    float: left;
+    width: 60%;
+    color: #eaac8b;
+    padding: 20px;
+}
+
+#about .about-img {
+    float: left;
+    width: 40%;
+    padding: 20px;
+
+}
+
+#about .about-img img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/*-----Styles for faq.html------*/
+
+#faq {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-anton-uniqueton-3823093.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#faq:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#faq .faq-content {
+    float: center;
+    width: 70%;
+    color: #eaac8b;
+    padding: 100px 50px;
+}
+
+#faq .faq-img {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+/* ---- questions ----*/
+
+#questions {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#questions:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#questions .questions {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 35px;
+}
+
+#questions .material-symbols-outlined {
+    font-size: 80px;
+    color: #e56b6f;
+}
+
+/*------ Styles for impressum.html------*/
+#impressum {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-simon-berger-2193186.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#impressum:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#impressum .impressum-content {
+    float: center;
+    width: 70%;
+    color: #355070;
+    padding: 100px 50px;
+}
+
+
+#impressum .impressum-img {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+#impressum .impressum-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/*-----imp----*/
+
+#imp {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#imp:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#imp .imp {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 35px;
+}
+
+#imp .material-symbols-outlined {
+    font-size: 80px;
+    color: #899db5;
+}
+
+/*_________news________*/
+#news {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-simon-berger-2193186.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#news:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#news .news-content {
+    float: center;
+    width: 70%;
+    color: #355070;
+    padding: 100px 50px;
+}
+
+
+#news .news-img {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+/*------Us-----*/
+
+.projektleitung {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#projektleitung .projektleitung {
+    float: left;
+    width: 50%;
+}
+
+#projektleitung .projektleitung-img img {
+    float: centre;
+    width: 100px;
+    border-radius: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#projektleitung .projektleitung-img p {
+    text-align: center;
+}
+
+.impressum {
+    font-size: 12px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+/*Styles for registrierung.html*/
+
+#registrierung {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-engin-akyurt-2771927.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#registrierung:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#registrierung .registrierung-content {
+    float: center;
+    width: 70%;
+    color: #e56b6f;
+    padding: 100px 50px;
+}
+
+#registrierung .registrierung-img {
+    float: left;
+    width: 30%;
+    padding-top: 60px;
+}
+
+/*----form----*/
+
+#form {
+    padding: 40px;
+    background-image: url(../img/pexels-scott-webb-2824173.jpg);
+
+
+}
+
+#form .form-label {
+    color: #355070;
+}
+
+#form .form-check-label {
+    color: #355070;
+}
+
+/*LoginSeite */
+
+#login {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-pew-nguyen-244133.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#login:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#login .login-content {
+    float: center;
+    width: 70%;
+    color: #e56b6f;
+    padding: 100px 50px;
+}
+
+#login .login-img {
+    float: left;
+    width: 30%;
+    padding-top: 40px;
+}
+
+/* --------Footer--------*/
+
+#main-footer {
+    background-color: #899db5;
+    min-height: 100px;
+    padding: 50px;
+}
+
+#main-footer p {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#main footer p a {
+    color: whitesmoke;
+}
+
+/*-----------------------------*/
+
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="checkbox"],
+input[type="submit"] {
+    margin-bottom: 10px;
+}
+
+/*---------reservations---------*/
+
+#reservation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-cottonbro-studio-6466291.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+#reservation:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#reservation .reservation-content {
+    float: center;
+    width: 70%;
+    color: #eaac8b;
+    padding: 100px 50px;
+}
+
+/*---------Profile-------*/
+
+#profile {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pexels-valeria-boltneva-827528.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+
+}
+
+#profile .profile-content {
+    float: center;
+    width: 70%;
+    padding: 100px 50px;
+}
+
+#logout-form {
+    float: right;
+    margin: 50px;
+}
