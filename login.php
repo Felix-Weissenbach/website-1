@@ -18,21 +18,21 @@
                 {
                     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
                     $username = $_POST["username"];
-                }
-                if(password_verify("admin", $password) && ($username == "admin"))
-                {
-                    $_SESSION["anrede"] = "";
-                    $_SESSION["name"] = "Admin Admin";
-                    $_SESSION["username"] = "Admin";
-                    $_SESSION["email"] = "admin@admin.at";
-                    $_SESSION["password"] = $password;
-                    $anrede = $_SESSION["anrede"];
-                    $name = $_SESSION["name"];
-                    echo '<script type="text/javascript">window.location.href="index.php?page=home";</script>';
-                }
-                else
-                {
-                    echo "Ungültiger Username oder Passwort";
+                    if(password_verify("admin", $password) && ($username == "admin"))
+                    {
+                        $_SESSION["anrede"] = "";
+                        $_SESSION["name"] = "Admin Admin";
+                        $_SESSION["username"] = "Admin";
+                        $_SESSION["email"] = "admin@admin.at";
+                        $_SESSION["password"] = $password;
+                        $anrede = $_SESSION["anrede"];
+                        $name = $_SESSION["name"];
+                        echo '<script type="text/javascript">window.location.href="index.php?page=home";</script>';
+                    }
+                    else
+                    {
+                        echo "Ungültiger Username oder Passwort";
+                    }
                 }
             }
             ?>

@@ -59,7 +59,7 @@
                             if ($imageFileType == "jpg" || $imageFileType == "jpeg") {
                                 $source_image = imagecreatefromjpeg($target_file);
                             }
-                            if ($source_image !== false) {
+                            if ($source_image !== false && $source_image !== null) {
                                 // Continue with the thumbnail creation logic
             
                                 // Calculate thumbnail dimensions (e.g., 100x100 for thumbnail size)
